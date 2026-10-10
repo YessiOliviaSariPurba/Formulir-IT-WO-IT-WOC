@@ -74,9 +74,9 @@
                             PT KERETA API INDONESIA (PERSERO)<br>SISTEM INFORMASI
                         </td>
                         <td style="width: 12%;">No. Dokumen</td>
-                        <td style="width: 23%;"><span class="kop-no-dokumen">{{ $val('no_dokumen', 'FR.SM/TI/031.003/10-2020') }}</span></td>
+                        <td style="width: 23%;"><input type="text" name="no_dokumen" id="input_no_dokumen" value="{{ $val('no_dokumen', 'FR.SM/TI/031.003/10-2020') }}" class="form-input-line" style="border-bottom: none;"></td>
                     </tr>
-                    <tr><td>Tanggal</td><td><span class="kop-tanggal-dokumen">{{ $val('tanggal_dokumen', '12 Oktober 2020') }}</span></td></tr>
+                    <tr><td>Tanggal</td><td><input type="text" name="tanggal_dokumen" id="input_tanggal_dokumen" value="{{ $val('tanggal_dokumen', '12 Oktober 2020') }}" class="form-input-line" style="border-bottom: none;"></td></tr>
                     <tr>
                         <td rowspan="2" style="width: 20%; text-align: center; padding: 6px;">
                             <div style="border: 2px solid #eadc04; color: #eadc04; font-weight: bold; font-size: 12px; padding: 4px 8px; display: inline-block;">TERBATAS</div>
@@ -84,40 +84,12 @@
                         <td rowspan="2" style="width: 45%; text-align: center; font-weight: bold; font-size: 12px;">
                             FORMULIR IT WORK ORDER COMPLETION (IT WOC)
                         </td>
-                        <td>Versi</td><td><span class="kop-versi-dokumen">{{ $val('versi_dokumen', '002-2020') }}</span></td>
+                        <td>Versi</td><td><input type="text" name="versi_dokumen" id="input_versi_dokumen" value="{{ $val('versi_dokumen', '002-2020') }}" class="form-input-line" style="border-bottom: none;"></td>
                     </tr>
                     <tr><td>Halaman</td><td>1 dari 3</td></tr>
                 </table>
 
                 <table style="border-collapse: collapse; width: 100%; font-size: 11px; margin-top: 15px;">
-                    <tr>
-                        <td style="border: 1px solid black; padding: 4px 6px; width: 140px;">No. Dokumen</td>
-                        <td style="border: 1px solid black; padding: 4px 6px; width: 10px; border-right: none;">:</td>
-                        <td style="border: 1px solid black; padding: 4px 6px; border-left: none;">
-                            <input type="text" name="no_dokumen" id="input_no_dokumen" value="{{ $val('no_dokumen', 'FR.SM/TI/031.003/10-2020') }}" class="form-input-line">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid black; padding: 4px 6px;">Tanggal Dokumen</td>
-                        <td style="border: 1px solid black; padding: 4px 6px; border-right: none;">:</td>
-                        <td style="border: 1px solid black; padding: 4px 6px; border-left: none;">
-                            <input type="text" name="tanggal_dokumen" id="input_tanggal_dokumen" value="{{ $val('tanggal_dokumen', '12 Oktober 2020') }}" class="form-input-line">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid black; padding: 4px 6px;">Versi</td>
-                        <td style="border: 1px solid black; padding: 4px 6px; border-right: none;">:</td>
-                        <td style="border: 1px solid black; padding: 4px 6px; border-left: none;">
-                            <input type="text" name="versi_dokumen" id="input_versi_dokumen" value="{{ $val('versi_dokumen', '002-2020') }}" class="form-input-line">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid black; padding: 4px 6px;">Halaman</td>
-                        <td style="border: 1px solid black; padding: 4px 6px; border-right: none;">:</td>
-                        <td style="border: 1px solid black; padding: 4px 6px; border-left: none;">
-                            <input type="text" name="halaman" value="{{ $val('halaman', '1') }}" class="form-input-line">
-                        </td>
-                    </tr>
                     <tr>
                         <td style="border: 1px solid black; padding: 4px 6px; width: 140px;">IT WO Terkait</td>
                         <td style="border: 1px solid black; padding: 4px 6px; width: 10px; border-right: none;">:</td>
@@ -185,7 +157,6 @@
                             <input type="text" name="penanggung_jawab_nipp" value="{{ $val('penanggung_jawab_nipp') }}" class="form-input-line">
                             <div>Jabatan</div>
                             <input type="text" name="penanggung_jawab_jabatan" value="{{ $val('penanggung_jawab_jabatan') }}" class="form-input-line">
-                        </td>
                         </td>
                         <td style="width: 25%;" class="field-box">
                             <div class="field-box-title">Pelaksana Pekerjaan</div>
